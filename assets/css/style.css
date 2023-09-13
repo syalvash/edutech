@@ -12,18 +12,30 @@
 }
 
 section.coming-soon {
-    /*background-image: url(../images/coming-soon-bg.jpg);*/
+    background-image: url(../images/coming-soon-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #FFF;
     padding: 120px 0px;
 }
 
+section.coming-soon .continer.centerIt > div {
+    float: left;
+    width: 50%;
+}
+
+
+section.coming-soon .col-md-5{
+    width: 50%;
+    display: flex;
+    padding-left: 80px;
+}
+
 section.coming-soon .continer .counter div {
   display: inline-block;
 }
 section.coming-soon .continer h4 {
-    margin-top: 100px;
+    margin-top: 0px;
     font-size: 30px;
     color: #836096;
     font-weight: 800;
@@ -34,6 +46,12 @@ section.coming-soon .continer h4 {
 section.coming-soon .continer h4 em {
     font-style: normal;
     color: #EFC73B;
+}
+
+section.coming-soon form fieldset {
+    border: none; 
+    padding: 0; 
+    margin: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -123,17 +141,19 @@ section.coming-soon .top-content {
 }
 
 section.coming-soon .top-content h6 {
-    font-size: 14px;
-    color: #000;
-    background-color:#A562CB;
+    font-size: 20px;
+    color: #fff;
+    background-color:#AD96BA;
     padding: 40px;
     text-align: center;
     line-height: 24px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
 }
 
 section.coming-soon .top-content h6 em {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 section.coming-soon form {
@@ -141,19 +161,21 @@ section.coming-soon form {
     padding: 60px 40px;
     width: 100%;
     text-align: center;
+    border-radius: 0px 0px 20px 20px;
 }
 
 section.coming-soon form input {
     width: 100%;
     height: 40px;
-    background-color: #836096;
-    border-radius: 0px;
+    background-color: rgba(250,250,250,0.1);
+    border-radius: 5px;
     border: none;
     outline: none;
     color: #A562CB;
     font-size: 13px;
     margin-bottom: 20px;
     letter-spacing: 0.5px;
+    padding-left: 20px;
 }
 
 section.coming-soon form input:focus {
@@ -161,7 +183,7 @@ section.coming-soon form input:focus {
     border: none;
     box-shadow: none;
     color: #000;
-    background-color: #EFC73B;
+    background-color: #fff;
 }
 
 section.coming-soon form::placeholder { color: #fff; }
@@ -183,90 +205,6 @@ section.coming-soon form button {
     border: none;
 }
 
-
-/* Courses 
-
-section.courses {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #AD96BA;
-    padding: 120px 0px;
-}
-
-section.courses .item img {
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
-section.courses .item .down-content {
-    padding: 30px;
-    background-color: #fff;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-section.courses .item .down-content h4 {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #1e1e1e;
-    letter-spacing: 0.5px;
-    font-weight: 700;
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-section.courses .item .down-content p {
-    margin-bottom: 25px;
-}
-
-section.courses .item .down-content img {
-    width: 40px;
-    border: 2px solid #f5a425;
-    border-radius: 50%;
-    text-align: left;
-    display: inline-block;
-}
-
-section.courses .item .down-content .text-button-pay {
-    float: right;
-    display: inline-block;
-    margin-top: -30px;
-}
-
-section.courses .item .down-content .text-button-pay a {
-    color: #f5a425;
-    font-size: 13px;
-}
-
-section.courses .item .down-content .text-button-free {
-    float: right;
-    display: inline-block;
-    margin-top: -30px;
-}
-
-section.courses .item .down-content .text-button-free a {
-    color: #7a7a7a;
-    font-size: 13px;
-}
-
-section.courses .owl-carousel .owl-nav {
-    display: none;
-}
-
-section.courses .owl-carousel .owl-dots {
-    text-align: center;
-}
-
-section.courses .owl-carousel button.owl-dot {
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    margin: 50px 10px 0px 10px;
-    outline: none;
-}
-section.courses .owl-carousel button.active {
-    background-color: #f5a425;
-}*/
 
 section.contact {
     background-repeat: no-repeat;
@@ -357,7 +295,7 @@ section.contact form textarea::placeholder { color: #fff; }
 
 
 section.contact form button {
-    background-color: #f5a425;
+    background-color: #fff;
     color: #836096;
     font-size: 16px;
     text-transform: uppercase;
@@ -369,10 +307,9 @@ section.contact form button {
     box-shadow: none;
     border: none;
     border-radius: 10px;
-    display: flex;
+    display: flex;;
     
 }
-
 
 section.courses{
     background-repeat: no-repeat;
@@ -381,13 +318,7 @@ section.courses{
     padding: 120px 0px;
     align-items: center;
 }
-section.courses .slide-container {
-    max-width: 1120px;
-    width: 100%;
-    background-color: #f5a425;
-    padding: 40px 40px;
-    align-items: center;
-}
+
 section.courses .card-image {
     position: relative;
     height: 150px;
@@ -443,6 +374,15 @@ section.courses .name{
     color: #836096;
 }
 
+.card-wrapper {
+    display: grid; /* Membuat container menjadi grid container */
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(250px, 1fr)
+    ); /* Atur lebar kolom kartu sesuai kebutuhan */
+    grid-gap: 50px; /* Atur jarak antara kartu */
+  }
+
 section.courses .description{
     font-size: 14px;
     font-weight: 500px;
@@ -469,14 +409,10 @@ section.courses .button{
     box-shadow: none;
     border: none;
 }
-
-section.courses .button:hover{
-    background: #EFC73B;
-}
     /* Footer */
 
 footer{
-    background-color: #836096;
+    background-color: #0c1228;
     text-align: center;}
 
 footer p {
